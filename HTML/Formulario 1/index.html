@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 1</title>
+</head>
+<body>
+    <h1>Formularios en HTML5</h1>
+    <p>Profesora: Ana Fuentes</p>
+    <form action="">
+        <label for="name">Tu nombre: (*)</label><br>
+        <input type="text" name="name" id="name" required size="40"><br><br>
+
+        <label for="email">Correo electrónico: (*)</label><br>
+        <input type="text" name="email" id="email" required placeholder="usuario@dominio.com" size="40"><br><br>
+
+        <label for="password">Contraseña: (*)</label><br>
+        <input type="password" name="password" id="password" size="10"><br><br>
+
+        <label for="fnac">Fecha de nacimiento: </label><br>
+        <input type="date" name="fnac" id="fnac"><br><br>
+
+        <label for="hora">¿Qué hora es?</label>
+        <input type="time" name="hora" id="hora"><br><br>
+
+        <label for="mes">¿En que mes estamos?</label>
+        <input type="month" name="mes" id="mes"><br><br>
+
+        <label for="fav_character">Selecciona tu personaje preferido: </label><br>
+        <input type="radio" name="fav_character" id="flash_gordon" value="flash_gordon">
+        <label for="flash_gordon">Flash Gordon</label><br>
+        <input type="radio" name="fav_character" id="ming" value="ming">
+        <label for="ming">Ming, el despiadado</label><br>
+        <input type="radio" name="fav_character" id="aura" value="aura">
+        <label for="aura">La princesa Aura</label><br>
+        <input type="radio" name="fav_character" id="vultan" value="vultan">
+        <label for="vultan">Príncipe Vultan</label><br>
+        <input type="radio" name="fav_character" id="arden" value="arden">
+        <label for="arden">Dale Arden</label><br><br>
+
+        <label for="fav_character2">Selecciona tu personaje preferido: </label><br>
+        <select id="character">
+            <option value="flash_gordon">Flash Gordon</option>
+            <option value="ming">Ming, el despiadado</option>
+            <option value="aura">La Princesa Aura</option>
+            <option value="vultan">Príncipe Vultan</option>
+            <option value="arden">Dale Arden</option>
+        </select><br><br>
+
+        <label for="num_comics_week">¿Cuántos cómics de Flash Gordon lees a la semana?</label><br>
+        <input type="range" name="num_comics_week" id="num_comics_week"><br><br>
+
+        <label for="color">¿Color ideal de las mayas de Flash Gordon?</label><br>
+        <input type="color" name="color" id="color"><br><br>
+
+        <label for="num_comics_day">¿Cuántas páginas de comics de Flash Gordon te lees cada día?</label>
+        <input type="number" name="num_comics_day" id="num_comics_day" size="10">
+
+    </form>
+</body>
+</html>
