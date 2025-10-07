@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario 1</title>
 </head>
+
 <body>
     <h1>Formularios en HTML5</h1>
     <p>Profesora: Ana Fuentes</p>
@@ -55,8 +57,23 @@
         <input type="color" name="color" id="color"><br><br>
 
         <label for="num_comics_day">¿Cuántas páginas de comics de Flash Gordon te lees cada día?</label>
-        <input type="number" name="num_comics_day" id="num_comics_day" size="10">
+        <input type="number" name="num_comics_day" id="num_comics_day" size="10"><br><br>
+
+        <p>Descuentos: <br>
+            <label for="fam_num"><input type="checkbox" name="fam_num" id="fam_num">Familia númerosa</label><br>
+            <label for="pensionista"><input type="checkbox" name="pensionista" id="pensionista">Pensionista</label><br>
+            <label for="nec_esp"><input type="checkbox" name="nec_esp" id="nec_esp">Necesidades especiales</label>
+        </p>
+
+        <label for="archivo">Selecciona un archivo <input type="file" name="archivo" id="archivo"></label><br><br>
+
+        <progress value="70" max="100" ></progress>
+        <br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
 
     </form>
 </body>
+
 </html>
