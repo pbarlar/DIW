@@ -1,0 +1,9 @@
+table{
+    border-top: solid 1px orange;
+    border-right: solid 1px orange;
+}
+
+tr:only-child{
+    color: white;
+    background-color:crimson;
+}
