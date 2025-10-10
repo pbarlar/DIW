@@ -50,8 +50,40 @@
 
         <!-- Ejercicio 11 -->
         <label for="ej11">Ejercicio 11: Código Postal: </label>
-        <input type="number" name="ej11" id="ej12" minlength="5" maxlength="5"><br><br>
+        <input type="text" name="ej11" id="ej12" pattern="^[0-9]{5}$"><br><br>
 
+        <!-- Ejercicio 12 -->
+        <label for="ej12">Ejercicio 12: Fecha Formato DD/MM/AAAA: </label>
+        <input type="date" name="ej12" id="ej12"><br><br>
+
+        <!-- Ejercicio 13 -->
+        <label for="ej13">Ejercicio 13: Telefono: </label>
+        <input type="tel" name="ej13" id="ej13" pattern="^[0-9]{9}" inputmode="numeric"><br><br>
+
+        
+        <!-- Ejercicio 14 -->
+        <label for="ej14">Ejercicio 14: Contraseña: </label>
+        <input type="password" name="ej14" id="ej14" pattern="^[A-Z]{1}[0-9]{1}" minlength="8"><br><br>
+
+        <!-- Ejercicio 15 -->
+        <label for="ej15">Ejercicio 15: Contraseña: </label>
+        <input type="password" name="ej15" id="ej15" pattern="^\d{4}-\d{4}-\d{4}-\d{4}$"><br><br>
+
+        <!-- Ejercicio 16 -->
+        <label for="ej16">Ejercicio 16: Contraseña: </label>
+        <input type="text" name="ej16" id="ej16" pattern="^[A-Z]{2}$"><br><br>
+
+        <!-- Ejercicio 17 -->
+        <label for="ej17">Ejercicio 17: Hora formato HH:MM: </label>
+        <input type="time" name="ej17" id="ej17"><br><br>
+
+        <!-- Ejercicio 18 -->
+        <label for="ej18">Ejercicio 18: Codigo Producto formato (XX-9999): </label>
+        <input type="time" name="ej18" id="ej18" pattern="^\D{2}-\d{4}$"><br><br>
+
+        <!-- Ejercicio 19 -->
+        <label for="ej18">Ejercicio 19: Código descuento 6 caracteres alfanuméricos: </label>
+        <input type="time" name="ej18" id="ej18" pattern="^\w{6}"><br><br>
 
 
         <input type="submit" value="Enviar">
