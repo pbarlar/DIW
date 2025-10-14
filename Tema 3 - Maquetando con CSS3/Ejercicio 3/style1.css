@@ -1,0 +1,25 @@
+input:first-of-type{
+    background-color: greenyellow;
+}
+
+input:first-of-type:hover{
+    background-color: wheat;
+}
+
+input:first-of-type:focus{
+    background-color: skyblue;
+}
+
+input:nth-of-type(2){
+    background-color: red;
+}
+
+
+input[type=radio]:focus+label{
+    font-style: italic;
+}
+
+input[type=checkbox]:focus+label{
+    background-color: orange;
+    font-weight: bold;
+}
