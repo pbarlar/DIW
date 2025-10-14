@@ -1,0 +1,17 @@
+h1{counter-reset: secciones;}
+
+h2::before{
+    counter-increment: secciones;
+    content: "Unidad " counter(secciones,upper-roman) ": ";
+    color: blue;
+}
+
+h2{
+    counter-reset: secciones2;
+    color: midnightblue;
+}
+
+h3::before{
+    counter-increment: secciones2;
+    content: counter(secciones2,lower-alpha)")";
+}

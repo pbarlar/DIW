@@ -1,0 +1,30 @@
+h1,hr{
+    color: blue;
+    text-align: center;
+}
+
+body{counter-reset: capitulos;}
+
+h2::before{
+    counter-increment: capitulos;
+    content: "Capitulo "counter(capitulos)": ";
+    color: blue;
+}
+
+h2{
+    color: blue;
+    counter-reset: secciones;
+}
+
+
+h3::before{
+    counter-increment: secciones;
+    content: counters(capitulos,".")"."counter(secciones)" ";
+}
+
+h3{counter-reset: secciones2;}
+
+h4::before{
+    counter-increment: secciones2;
+    content: counters(capitulos,".")"."counters(secciones,".")"."counter(secciones2)" ";
+}
