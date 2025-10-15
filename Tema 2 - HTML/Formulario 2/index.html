@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2 Evaluable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>HOJA DE INSCRIPCIÓN EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h1>
+    <form action="">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="name">Nombre(*):</label>
+            <label for="apellido">Apellidos(*): </label>
+            <label for="dni">DNI(*): </label><br>
+            <input type="text" name="name" id="name">
+            <input type="text" name="apellido" id="apellido">
+            <input type="text" name="dni" id="dni"><br>
+
+            <label for="localidad">Localidad de nacimiento</label>
+            <label for="provincia">Provincia: </label>
+            <label for="fnac">Fecha de nacimiento</label><br>
+            <input type="text" name="localidad" id="localidad">
+            <select name="provincia" id="provincia">
+                <optgroup label="Andalucía">
+                    <option value="huelva">Huelva</option>
+                    <option value="granada">Granada</option>
+                    <option value="sevilla">Sevilla</option>
+                    <option value="malaga">Málaga</option>
+                    <option value="cadiz">Cadiz</option>
+                    <option value="cordoba">Córdoba</option>
+                    <option value="jaen">Jaén</option>
+                </optgroup>
+                <optgroup label="Castilla">
+                    <option value="avila">Ávila</option>
+                    <option value="burgos">burgos</option>
+                    <option value="leon">León</option>
+                    <option value="palencia">palencia</option>
+                    <option value="segovia">Segovia</option>
+                    <option value="soria">Soria</option>
+                    <option value="salamanca">Salamanca</option>
+                    <option value="valladolid">valladolid</option>
+                    <option value="zamora">Zamora</option>
+                </optgroup>
+            </select>
+            <input type="date" name="fnac" id="fnac"><br>
+
+            <label for="direccion">Dirección(*): </label>
+            <label for="cod_postal">Código Postal</label><br>
+            <input type="text" name="direccion" id="direccion">
+            <input type="text" name="cod_postal" id="cod_postal" pattern="^[0-9]{5}"><br>
+
+            <label for="email">Email(*)</label>
+            <label for="telefono">Teléfono(*): </label><br>
+            <input type="email" name="email" id="email">
+            <input type="tel" name="telefono" id="telefono" pattern="^[0-9]{9}">
+        </fieldset>
+    </form>
+</body>
+</html>
