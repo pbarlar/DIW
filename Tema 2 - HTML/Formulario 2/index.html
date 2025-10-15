@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario 2 Evaluable</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1>HOJA DE INSCRIPCIÓN EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h1>
     <form action="">
@@ -56,6 +58,76 @@
             <input type="email" name="email" id="email">
             <input type="tel" name="telefono" id="telefono" pattern="^[0-9]{9}">
         </fieldset>
+        <fieldset>
+            <legend>Forma de Acceso</legend>
+            <label>
+                <input type="radio" name="acceso" value="directo"> Directo
+            </label><br>
+            <blockquote>
+                <label><input type="radio" name="directo" value="bachillerato"> Bachillerato Log Modalidad <input
+                        type="text"></label><br>
+                <label><input type="radio" name="directo" value="experimental"> Experimental</label><br>
+                <label><input type="radio" name="directo" value="cou"> COU Opción <input type="text"></label><br>
+                <label><input type="radio" name="directo" value="fp2"> FP2</label><br>
+                <label><input type="radio" name="directo" value="otros"> Otros (especifique) <input type="text"></label>
+            </blockquote>
+            <label>
+                <input type="radio" name="acceso" value="prueba_libre"> Prueba Libre
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Documentos adjuntados</legend>
+            <label>
+                <input type="checkbox" name="fot_dni" id="fot_dni">
+                Fotocopia DNI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </label>
+            <label>
+                <input type="checkbox" name="cert" id="cert">
+                Certificado académico
+            </label><br>
+            <label>
+                <input type="checkbox" name="otros" id="otros">
+                Otros Documentos (especifique)
+                <input type="text" name="otros_doc" id="otros_doc">
+            </label><br>
+            <label>
+                Adjuntar documentos (puedes subir mas de un documento)
+                <input type="file" name="documents" id="documents">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Personaliza</legend>
+            <label>
+                Código personalizado
+                <input type="text" name="cod" id="cod" pattern="^[A-Z]{2,2}-[0-9]{4,4}$">
+            </label><br>
+            <label>
+                Grupo del curso
+                <input type="text" name="grupo" id="grupo" pattern="A|B|AA|ABA|BB">
+            </label><br>
+            <label>
+                Idioma Certificado
+                <select name="idioma" id="idioma">
+                <option value="ingles">Inglés</option>
+                <option value="frances">Frances</option>
+                <option value="italiano">Italiano</option>
+                <option value="portugues">Portugues</option>
+                <option value="japones">Japones</option>
+                </select>
+            </label><br>
+            <label>
+                Certificación en idiomas
+                <input type="text" name="certificacion" id="certificacion" pattern="A1|A2|B1|B2|C1|C2">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Otros datos</legend>
+            Indica alguna otra cosa a tener en cuenta: <br>
+            <textarea name="cosas" id="cosas" cols="40" rows="5">Déjanos tu comentario</textarea>
+        </fieldset>
+        <input type="submit" value="Envíar Solicitud">
+        <input type="reset" value="Resetear">
     </form>
 </body>
+
 </html>

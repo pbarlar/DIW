@@ -16,3 +16,19 @@ fieldset>label:nth-of-type(4), fieldset>label:nth-of-type(5){
     padding-right: 20px;
 }
 
+fieldset:nth-child(2){
+    background-color: #b18272;
+}
+
+fieldset:nth-child(3){
+    background-color: #c2b291;
+}
+
+fieldset:nth-child(4){
+    background-color: #d6e4c3;
+}
+
+fieldset:nth-child(5){
+    background-color: #EAE3D1;
+}
+
