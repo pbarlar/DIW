@@ -1,0 +1,10 @@
+p:first-child{
+    font-family:Dancing Script;
+    width: 30%;
+    background-color: wheat;
+}
+
+p:nth-child(2){
+    width: 30%;
+    
+}
