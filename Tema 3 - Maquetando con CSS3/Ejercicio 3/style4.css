@@ -1,0 +1,20 @@
+body{
+    counter-reset: capitulos;
+}
+
+h2{
+    counter-reset: subsec;
+}
+
+h2::before{
+    counter-increment: capitulos;
+    content: "Capítulo "counter(capitulos)": ";
+    color: blue;
+}
+
+h3::after{
+    counter-increment: subsec;
+    content: " - Subsección "counter(capitulos)"."counter(subsec);
+    color: green;
+    font-style: italic;
+}

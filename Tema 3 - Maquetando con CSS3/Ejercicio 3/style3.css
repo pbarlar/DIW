@@ -1,0 +1,17 @@
+body{
+    counter-reset: partes;
+}
+
+h2{
+    counter-reset: secciones;
+}
+
+h2::before{
+    counter-increment: partes;
+    content: "Parte "counter(partes)" ";
+}
+
+h3::before{
+    counter-increment: secciones;
+    content: counter(partes)"."counter(secciones)") ";
+}

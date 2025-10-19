@@ -1,0 +1,27 @@
+nav a {
+    color: green;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* Títulos base */
+  section h2 {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  /* Efectos del punto activo */
+  section:target h2 {
+    color: green;
+  }
+
+  section:target h2::before {
+    content: "› ";
+    color: green;
+  }
