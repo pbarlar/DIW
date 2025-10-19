@@ -1,0 +1,37 @@
+@counter-style estrellas {
+  system: symbolic;
+  symbols: "★" "☆";
+  suffix: " ";
+}
+
+div{
+    counter-set: cap 2;
+}
+
+h2::before{
+    counter-increment: cap;
+    color: darkblue;
+    content: "Capítulo "counter(cap) "- ";
+}
+
+h2{
+    counter-reset: subcap;
+    color:darkcyan;
+}
+
+h3::before{
+    counter-increment: subcap;
+    color: grey;
+    content: counters(cap,".")"."counter(subcap,lower-alpha)"→ ";
+}
+
+h3{
+    counter-reset: subcad2;
+}
+
+h4::before{
+    counter-increment: subcad2;
+    
+    content: counter(subcad2,estrellas);
+}
+
