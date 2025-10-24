@@ -1,0 +1,117 @@
+h2{
+    background: linear-gradient(#42009f,#d152b4);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 70px;
+}
+
+div:first-of-type{
+    width: 900px;
+    height: 200px;
+    background: linear-gradient(to left,red,green,yellow,blue,black);
+    margin-bottom: 20px;
+}
+
+div:nth-of-type(2){
+    width: 900px;
+    height: 200px;
+    background: linear-gradient(blue 0%,blue 10%,
+                                yellow 10%, yellow 20%,
+                                red 20%, red 30%,
+                                blue 30%, blue 40%,
+                                yellow 40%, yellow 50%,
+                                red 50%, red 60%,
+                                blue 60%, blue 70%,
+                                yellow 70%, yellow 80%,
+                                red 80%, red 90%,
+                                blue 90%, blue 100%);
+
+    margin-bottom: 20px;
+}
+
+
+div:nth-of-type(3){
+    width: 450px;
+    height: 300px;
+    background: radial-gradient(yellow,red, black);
+    margin-bottom: 20px;
+}
+
+div:nth-of-type(4){
+    width: 450px;
+    height: 300px;
+    background: radial-gradient(ellipse at center,yellow 50%, red 60%,black 75%);
+    margin-bottom: 20px;
+}
+
+
+div:nth-of-type(5){
+    margin-bottom: 20px;
+    width: 450px;
+    height: 300px;
+    background: radial-gradient(circle at center, yellow 60%, red 70%, black 80%);
+}
+
+div:nth-of-type(6){
+    margin-bottom: 20px;
+    width: 450px;
+    height: 300px;
+    background: radial-gradient(circle at left, yellow 60%,red 75%,black);
+}
+
+div:nth-of-type(7){
+    margin-bottom: 20px;
+    width: 900px;
+    height: 200px;
+    background: radial-gradient(circle at center,blue,red,yellow 90%);
+}
+
+div:nth-of-type(8){
+    width: 900px;
+    height: 200px; 
+    background: radial-gradient(circle, blue 0%, red 25%, yellow 55%);
+    margin-bottom: 20px;
+}
+
+div:nth-of-type(9){
+    width: 900px;
+    height: 200px; 
+    background: radial-gradient(circle,blue,red 50%, yellow 95%);
+    margin-bottom: 20px;
+}
+
+div:nth-of-type(10){
+    width: 450px;
+    height: 300px; 
+    background: radial-gradient(circle,#ef4141 0%,#ef4141 10%,
+                                        red 10%, red 20%,
+                                        #790f0f 20%,#790f0f 30%,
+                                        #ef4141 30%,#ef4141 40%,
+                                        red 40%,red 50%,
+                                        #790f0f 50%,#790f0f 60%,
+                                        #ef4141 60%,#ef4141 70%,
+                                        red 70%,red 80%,
+                                        #790f0f 80%,#790f0f 90%,
+                                        #ef4141 90%,#ef4141 100%);
+    margin-bottom: 20px;
+}
+
+div:nth-of-type(11){
+    width: 450px;
+    height: 300px; 
+    background:conic-gradient(rgb(4, 4, 84));
+    margin-bottom: 20px;
+}
+
+div:nth-of-type(11){
+    width: 450px;
+    height: 300px; 
+    margin-bottom: 20px;
+
+   background: conic-gradient(
+  red 0% 10%, blue 10%, yellow 25%,
+  red 30% 40%, blue 40% 50%, yellow 65%,
+  red 70% 80%, blue 80% 90%, yellow 100%
+);
+
+}
