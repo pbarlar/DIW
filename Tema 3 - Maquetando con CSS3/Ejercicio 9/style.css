@@ -109,9 +109,21 @@ div:nth-of-type(11){
     margin-bottom: 20px;
 
    background: conic-gradient(
-  red 0% 10%, blue 10%, yellow 25%,
-  red 30% 40%, blue 40% 50%, yellow 65%,
-  red 70% 80%, blue 80% 90%, yellow 100%
+      from 0deg at 50% 50%,
+      yellow 0deg,
+      red 30deg,
+      blue 60deg,
+      yellow 90deg,
+      red 120deg,
+      blue 150deg,
+      yellow 180deg,
+      red 210deg,
+      blue 240deg,
+      yellow 270deg,
+      red 300deg,
+      blue 330deg,
+      yellow 360deg
+    );
 );
 
 }
