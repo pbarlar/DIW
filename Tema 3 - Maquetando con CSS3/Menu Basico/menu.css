@@ -1,0 +1,18 @@
+nav{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    top:0px;
+}
+
+nav div{
+    display: inline-block;
+    padding-right: 2px;
+}
+
+div:hover{
+    margin-bottom: 2px solid white;
+}
+

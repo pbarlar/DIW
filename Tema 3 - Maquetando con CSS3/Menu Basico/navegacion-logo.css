@@ -1,0 +1,32 @@
+nav{
+    height: 60px;
+    background-color: lightblue;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    width: 100%;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    position: relative;
+    left: 20px;
+    top: 5px;
+}
+
+.clase-hijo{
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    left: 1300px;
+    border: 1px grey solid;
+    padding: 10px;
+    bottom: 15px;
+}
+
+.clase-hijo:hover{
+    background-color: black;
+    color: white;
+}
