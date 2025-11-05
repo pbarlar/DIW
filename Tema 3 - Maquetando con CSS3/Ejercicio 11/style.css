@@ -1,0 +1,177 @@
+/* --- Ajustes básicos --- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* --- Barra principal --- */
+header {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    /* Logo alineado a la derecha */
+    background-image: url('img/logo.jpg');
+    background-repeat: no-repeat;
+    background-size: 50px auto; /* Ajusta tamaño si quieres */
+    background-position: right 50px center; /* 50px de margen desde la derecha */
+}
+
+
+
+/* Quita viñetas y espacios */
+.menu-principal ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap; /* evita que los li se salten de línea */
+}
+
+/* Menú principal horizontal SIN FLEXBOX */
+.menu-principal > ul > li {
+    display: inline-block;
+    position: relative; /* para submenús */
+    vertical-align: top;
+}
+
+/* Enlaces principales */
+.menu-principal > ul > li > a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Elemento activo */
+.menu-principal ul .active {
+    background-color: #c62828;
+    color: white;
+}
+
+/* --- Submenús (ocultos por defecto) --- */
+.submenu,
+.submenu2 {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%; /* justo debajo del elemento padre */
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+}
+
+/* Submenú 1 (verde/morado intercalado) */
+.submenu li a {
+    display: block;
+    padding: 10px 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.submenu > li > a {
+    background-color: #5FFF59;
+}
+
+.submenu > li > a:hover {
+    background-color: #7B5FFF;
+}
+
+/* Submenú 2 (siempre verde) */
+.submenu2 {
+    left: 100%; /* se abre a la derecha */
+    top: 0;
+    background-color: #5FFF59;
+    min-width: 250px;
+}
+
+.submenu2 li a {
+    background-color: #5FFF59;
+    padding: 10px 15px;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.submenu2 li a:hover {
+    background-color: #7B5FFF;
+}
+
+/* --- Mostrar submenús --- */
+.menu-principal > ul > li:hover > .submenu {
+    display: block;
+}
+
+/* Cuando pasas por DAW o por cualquier hijo de DAW */
+.menu-principal > ul > li:hover .submenu2,
+.submenu li:hover > .submenu2 {
+    display: block;
+}
+
+/* --- Efectos hover --- */
+.menu-principal > ul > li:nth-child(2) > a:hover {
+    background-color: #7B5FFF;
+    color: white;
+}
+
+.menu-principal > ul > li:nth-child(3) > a:hover {
+    background-color: #7B5FFF;
+    color: white;
+}
+
+
+
+
+
+
+
+/* --- 3. Sección Principal --- */
+.main {
+    height: 500px; 
+    
+    
+    background-image: url('img/bosque.jpg');
+    
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.main-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 0;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.main-content p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.btn-matricular {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #e53935; /* Rojo */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.btn-matricular:hover {
+    background-color: #c62828;
+}
