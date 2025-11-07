@@ -66,6 +66,7 @@ body{
     padding: 10px;
     border: 1px solid rgb(91, 55, 247);
     border-radius: 20px;
+    cursor:pointer;
 }
 
 .content img{
