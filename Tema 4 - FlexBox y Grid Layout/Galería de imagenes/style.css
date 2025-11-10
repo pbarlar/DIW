@@ -1,0 +1,66 @@
+
+
+h1{
+    text-align: center;
+}
+
+.galeria{
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.galeria img{
+    margin: 10px;
+    width: 300px;
+    height:175px;
+    border-radius: 5px;
+}
+
+.padre{
+    width: 50%;
+    margin: 0 250px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.padre img{
+    height: 300px;
+    width: 300px;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.padre div{
+    width: 55%;
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+
+
+#n1{
+    order: -1;
+}
+
+#n2{
+    order: 0;
+}
+
+#n3{
+    order:2;
+    margin-right: 0px;
+    margin-left: 25px;
+}
+
+#n4{
+    order: 1;
+}
+
+#n5{
+    order: 3;
+}
+
+#n6{
+    order:4
+}
