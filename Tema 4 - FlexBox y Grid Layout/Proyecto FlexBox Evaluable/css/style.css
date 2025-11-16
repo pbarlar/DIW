@@ -1,0 +1,275 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+/* CABECERA */
+
+/* MENU NAVEGACIÓN */
+header{
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(to left top, rgba(55,185,30,0.83), rgba(25,59,240,0.83)),url("../images/fondo_superior.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    width: 92%;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav figure{
+    width: 15%;
+    margin-right: auto;
+}
+
+nav figure img{
+    width: 70%;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+nav a:last-child{
+    font-size: 1rem;
+    color: black;
+}
+
+/*Contenido cabecera*/
+.head_content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 92%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.head_content article{
+    width: 70%;
+    margin-right: 50px;
+    color: #fff;
+}
+
+.head_content article h1{
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+    font-family: Arial, Tahoma, Verdana;
+}
+
+.head_content article p{
+    margin-bottom: 20px;
+}
+
+.head_content article p a{
+    color: #008000;
+    text-decoration: none;
+    border: 1px solid #008000;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 5px;
+}
+
+.head_content form{
+    width: 25%;
+    background-color: rgb(0, 0, 0,0.8);
+    color: #fff;
+}
+
+.head_content form h2{
+    font-size: 1.2rem;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.head_content form label{
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+
+.head_content form input{
+    margin-left: 10px;
+    width: 90%;
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.head_content form button{
+    width: 90%;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    height: 30px;
+    background-color: #008000;
+    border: none;
+    color: #fff;
+}
+
+
+.head_content form button:hover{
+    background-color: #358d24;
+}
+
+/* FIN CABECERA */
+
+
+/*SECCIÓN 2*/
+.seccion2{
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.seccion2 div{
+    width: 20%;
+}
+
+.seccion2 div a{
+    display: block;
+    color: 	#13a3db;
+    text-decoration: #13a3db;
+    font-size: 2.5rem;
+    border: 1px solid #13a3db;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    line-height: 130px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    
+}
+
+.seccion2 div p{
+   text-align: center;
+}
+
+/* FIN SECCIÓN 2 */
+
+
+
+/*SECCIÓN 3*/
+.seccion3{
+    width: 100%;
+    height: 50vh;
+    background-color: #f6f6f6;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.seccion3 article{
+    width:  60%;
+}
+
+.seccion3 article h2{
+    font-size: 1.5rem;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.seccion3 article p{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.seccion3 article button{
+    margin-left: 50px;
+    margin-top: 20px;
+    padding: 10px;
+    color: white;
+    background-color: #008000;
+    width: 40%;
+    border: none;
+}
+
+.seccion3 article button:hover{
+    background-color: #358d24;
+}
+
+.seccion3 figure{
+    margin-top: 50px;
+    width: 30%;
+    height: 100%;
+}
+
+
+.seccion3 figure video{
+    width: 90%;
+    margin: auto;
+}
+
+/* FIN SECCIÓN 3 */
+
+
+/* SECCIÓN 4 STAFF */
+.staff{
+    width: 100%;
+    height: 65vh;
+}
+
+.staff h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.staff_cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.staff_card{
+    width: 20%;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px #ccc9c9;
+}
+
+.staff_card img{
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+
+.staff_card h3{
+    margin-top: 25px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.staff_card a{
+    text-decoration: none;
+    color: #107ba7;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.staff_card p{
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
