@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.grid{
+    width: 90%;
+    height: 500px;
+    margin: 20px auto;
+    outline: 3px solid black;
+
+    display: grid;
+    grid-template-columns: 200px 300px auto;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    /* row-gap: 10px;
+    column-gap: 40px; */
+    /* gap: 10px 40px; /*Aplica espaciado a la row primero y luego a las columnas
+    grid-auto-flow: column; */
+
+    /* justify-items:start;
+    align-items: center; */
+
+    /* place-items: end end; Combina justify y align items (1 va el align y segundo el justify) */
+
+    grid-template-columns: repeat(2,200px);
+    grid-template-rows: repeat(2,200px);
+
+    grid: 100px 150px auto/ repeat(2,1fr); /*Combina grid-template-columns y grid-template-row (Primero filas luego columnas*/
+    /* justify-content: center;
+    align-content: space-between; */
+
+    place-content: start start; /*Combina justify y align content (1 va el align y segundo el justify)*/
+}
+
+
+.grid__item{
+    font-size: 3rem;
+    text-align: center;
+    border: 1px solid black;
+    color: #fff;
+}
+
+.grid__item:nth-child(1){
+    background-color: crimson;
+    /* grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3; */
+
+    /* grid-column: 4/6; /*Combina grid-column start y grid column end
+    grid-row: 3/4; /*Combina grid-row-start y grid-row-end*/
+} 
+
+.grid__item:nth-child(2){
+    background-color: darkmagenta;
+    /* grid-column: 2 / span 2;
+    grid-row: 3 /span 1; */
+}
+
+.grid__item:nth-child(3){
+    background-color: steelblue;
+    /* grid-area: 2/1/-1/2; Simplifica las 4 propiedades de posicionamiento */
+}
+
+.grid__item:nth-child(4){
+    background-color: brown;
+    align-self: flex-end;
+    justify-self: start;
+    place-self: start center;
+    order: -1;
+}
+
+
+.grid__item:nth-child(5){
+    background-color: chocolate;
+    /* grid-column: 4 / -1;
+    grid-row: 1 / -2; */
+}
+
+
+.grid__item:nth-child(6){
+    background-color: midnightblue;
+}
