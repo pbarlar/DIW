@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 64px 0;
+}
+
+.navbar .left {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+.navbar .right {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar .right a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.navbar .right a.contacto {
+    font-size: 1rem;
+}
+
+.navbar .right a:hover {
+    text-decoration: underline;
+}
+
+.navbar .right a:hover .fa-brands {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+
+.navbar .bar {
+    background-color: black;
+    width: 36px;
+    height: 4px;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+.navbar .hamburguesa {
+    display: none;
+}
+
+/* FIN CABECERA */
+
+
+/* MAIN */
+
+.proyectos {
+    width: 100%;
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: repeat(7, 1fr);
+
+    grid-template-areas:
+        "apartamento apartamento casa1"
+        "apartamento apartamento casa1"
+        "casa4 casa3 casa2"
+        "casa5 casa6 casa6"
+        "casa5 casa6 casa6"
+        "casa7 casa7 casa8"
+        "casa7 casa7 casa8";
+    gap: 16px;
+}
+
+
+#apartamento {
+    grid-area: apartamento;
+}
+
+#casa1 {
+    grid-area: casa1;
+}
+
+#casa2 {
+    grid-area: casa2;
+}
+
+#casa3 {
+    grid-area: casa3;
+}
+
+#casa4 {
+    grid-area: casa4;
+}
+
+#casa5 {
+    grid-area: casa5;
+}
+
+#casa6 {
+    grid-area: casa6;
+}
+
+#casa7 {
+    grid-area: casa7;
+}
+
+#casa8 {
+    grid-area: casa8;
+}
+
+.proyecto {
+    position: relative;
+
+}
+
+.proyecto img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.proyecto .superpuesto {
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    opacity: 0;
+}
+
+.proyecto .superpuesto:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.superpuesto.blanco {
+    color: white;
+}
+
+
+.footer {
+    text-align: center;
+    font-size: 2rem;
+    padding: 64px;
+}
+
+
+
+/* Responsive modo tablet */
+@media screen and (min-width:501px) and (max-width:800px) {
+    .navbar .left {
+        font-size: 24px;
+    }
+
+
+    .proyectos {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-row: repeat(6, 1fr);
+
+        grid-template-areas:
+            "apartamento apartamento"
+            "casa1 casa2"
+            "casa3 casa3"
+            "casa4 casa5"
+            "casa6 casa6"
+            "casa7 casa8";
+    }
+
+
+    .proyecto .superpuesto {
+        font-size: 24px;
+    }
+
+    .footer {
+        font-size: 1.5rem
+    }
+}
+
+@media screen and (max-width:500px) {
+    .proyectos {
+        margin-top: 100px;
+        display: grid;
+
+        grid-template-columns: repeat(1, 1fr);
+        grid-row: repeat(9, 1fr);
+
+        grid-template-areas:
+            "apartamento"
+            "casa1"
+            "casa2"
+            "casa3"
+            "casa4"
+            "casa5"
+            "casa6"
+            "casa7"
+            "casa8";
+
+    }
+
+
+    .navbar .right {
+        display: none;
+    }
+
+    .navbar .hamburguesa {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 16px 24px;
+        z-index: 2;
+        width: 100%;
+        background-color: white;
+    }
+
+
+    .proyecto .superpuesto{
+        font-size: 20px;
+    }
+
+    .footer{
+        font-size: 1rem;
+        padding: 32px;
+    }
+
+}
