@@ -1,0 +1,75 @@
+section {
+    display: flex;
+    width: 50%;
+    background-color: black;
+}
+
+section div{
+    font-size: 2em;
+    width: 25%;
+    height: 100px;
+    line-height: 100px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+
+.caja1{
+    box-shadow: inset 0px 10px 0px 0px yellow;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.caja1:hover{
+    box-shadow: inset 0px 100px 0px 0px yellow;
+}
+
+.caja2{
+    box-shadow: inset 0px 10px 0px 0px red;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.caja2:hover{
+    box-shadow: inset 0px 100px 0px 0px red;
+}
+
+.caja3{
+    box-shadow: inset 0px 10px 0px 0px green;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.caja3:hover{
+    box-shadow: inset 0px 100px 0px 0px green;
+}
+
+.caja4{
+    box-shadow: inset 0px 10px 0px 0px blueviolet;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.caja4:hover{
+    box-shadow: inset 0px 100px 0px 0px blueviolet;
+}
+
+
+.caja1 a{
+    color: yellow;
+    text-decoration: none;
+}
+
+.caja2 a{
+    text-decoration: none;
+    color: red;
+}
+
+.caja3 a{
+    text-decoration: none;
+    color: green;
+}
+
+
+.caja4 a{
+    text-decoration: none;
+    color: blueviolet;
+}
