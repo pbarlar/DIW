@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    width: 80%;
+    margin: 20px auto;
+}
+
+.imagenes {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imagenes a{
+    display: block;
+    width: 30%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.imagenes a img{
+    width: 100%;
+    height: 250px;
+}
+
+
+.show{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+.show__image1{
+    width: 90%;
+    height: 70%;
+    background-image: url(img/imagen1.jpg);
+    background-size: cover;
+    margin: auto;
+
+    position: relative;
+}

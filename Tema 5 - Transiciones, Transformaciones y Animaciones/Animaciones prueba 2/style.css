@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital@0;1&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Source Sans 3";
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+section div {
+    position: relative;
+    width: 50%;
+    background-color: #20506b;
+    overflow: hidden;
+}
+
+
+section div:first-child{
+    background-image: url("img/imagen2.jpg");
+    background-size: cover;
+}
+
+
+section div h2{
+    position: absolute;
+    font-size: 12em;
+    white-space: nowrap;
+    line-height: 100vh;
+}
+
+
+section div:first-child h2{
+    left: 100%;
+    -webkit-text-stroke:2px;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-fill-color: transparent;
+    animation: animate 60s linear infinite;
+}
+
+section div:last-child h2 {
+    left: 0;
+    animation: animate 60s linear infinite;
+}
+
+
+@keyframes animate {
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(-100%);
+    }
+}
