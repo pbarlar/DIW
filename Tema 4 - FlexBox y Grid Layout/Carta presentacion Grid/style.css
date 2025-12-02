@@ -1,0 +1,94 @@
+:root {
+    --color-primary: #2658e4;
+    --color-secondary: #f4f7f8;
+    --color-text-dark: #333;
+}
+
+/* Estilos Generales */
+body {
+    background-color: var(--color-secondary);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--color-text-dark);
+}
+
+/* Contenedor Principal con Grid */
+.container {
+    display: grid;
+    /* CAMBIO CLAVE: Las columnas ahora son 4fr (imagen ancha) / 1fr (superposición estrecha) / 4fr (contenido ancho) */
+    grid-template-columns: 4fr 1fr 4fr;
+    grid-template-rows: 0.5fr auto 0.5fr; 
+    max-width: 900px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Imagen */
+.image-container {
+    /* Ocupa las primeras dos columnas: 4fr y 1fr. */
+    grid-column: 1 / 3; 
+    grid-row: 1 / 4; 
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Caja de Contenido (Superposición) */
+.content-box {
+    /* Ocupa las últimas dos columnas: 1fr y 4fr. */
+    /* Empieza en la línea 2 y termina en la línea 4. */
+    grid-column: 2 / 4; 
+    grid-row: 2 / 3; 
+    
+    background-color: var(--color-primary); 
+    color: white;
+    padding: 30px;
+    z-index: 10; 
+    align-self: start; 
+    margin-top: -50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.content-box h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.content-box p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Botón con Transición */
+.btn {
+    display: inline-block;
+    background-color: white;
+    color: var(--color-primary);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+    border: 2px solid white; 
+    transition: all 0.3s ease;
+}
+
+/* Efecto Hover para el Botón */
+.btn:hover {
+    background-color: var(--color-primary);
+    color: white; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+    transform: translateY(-2px); 
+}
