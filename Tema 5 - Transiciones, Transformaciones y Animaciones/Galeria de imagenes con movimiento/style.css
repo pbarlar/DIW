@@ -1,12 +1,29 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-h1{
+body {
+    font-family: sans-serif;
+}
+
+h1 {
     width: 80%;
     margin: 20px auto;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #512da8;
 }
 
 .imagenes {
@@ -14,37 +31,138 @@ h1{
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
-.imagenes a{
-    display: block;
-    width: 30%;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-
-.imagenes a img{
-    width: 100%;
+.gallery-item {
+    width: calc(33.333% - 10px);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
     height: 250px;
 }
 
-
-.show{
-    background-color: rgba(0, 0, 0, 0.7);
+.gallery-item img {
     width: 100%;
     height: 100%;
-    position: fixed;
+    object-fit: cover;
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    width: 80%;
+    margin: 20px auto;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #512da8;
+}
+
+.imagenes {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery-item {
+    width: calc(33.333% - 10px);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    height: 250px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Blind Effect */
+.overlay {
+    position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(81, 45, 168, 0.6);
+    transform: translateY(100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.gallery-item:hover .overlay {
+    transform: translateY(0);
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal:target {
     display: flex;
 }
 
-.show__image1{
-    width: 90%;
-    height: 70%;
-    background-image: url(img/imagen1.jpg);
-    background-size: cover;
-    margin: auto;
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
 
-    position: relative;
+.close {
+    position: absolute;
+    top: 20px;
+    right: 280px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    background: #e91e63;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
 }

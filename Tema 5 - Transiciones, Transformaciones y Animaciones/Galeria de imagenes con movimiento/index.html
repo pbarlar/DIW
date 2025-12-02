@@ -1,54 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Galería de imagenes</title>
-</head>
-<body>
-    <h1>Galería de imagenes</h1>
+    <!DOCTYPE html>
+    <html lang="en">
 
-    <div class="imagenes">
-        <a href="#imagen1">
-            <img src="img/imagen1.jpg" alt="Imagen 1">
-        </a>
-        <a href="#imagen2">
-            <img src="img/imagen2.jpg" alt="Imagen 2">
-        </a>
-        <a href="#imagen3">
-            <img src="img/imagen3.jpg" alt="Imagen 3">
-        </a>
-        <a href="#imagen4">
-            <img src="img/imagen4.jpg" alt="Imagen 4">
-        </a>
-        <a href="#imagen5">
-            <img src="img/imagen5.jpg" alt="Imagen 5">
-        </a>
-        <a href="#imagen6">
-            <img src="img/imagen6.jpg" alt="Imagen 6">
-        </a>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!DOCTYPE html>
+        <html lang="en">
 
-    <section class="show" id="imagenes">
-        <div class="show__image1">
-            <a href="#" class="show__close">X</a>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="style.css">
+            <title>Galería de imagenes</title>
+        </head>
+
+    <body>
+        <h1>Galería de imagenes</h1>
+
+        <div class="imagenes">
+            <div class="gallery-item">
+                <a href="#img1">
+                    <img src="img/imagen1.jpg" alt="Imagen 1">
+                    <div class="overlay"></div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="#img2">
+                    <img src="img/imagen2.jpg" alt="Imagen 2">
+                    <div class="overlay"></div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="#img3">
+                    <img src="img/imagen3.jpg" alt="Imagen 3">
+                    <div class="overlay"></div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="#img4">
+                    <img src="img/imagen4.jpg" alt="Imagen 4">
+                    <div class="overlay"></div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="#img5">
+                    <img src="img/imagen5.jpg" alt="Imagen 5">
+                    <div class="overlay"></div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="#img6">
+                    <img src="img/imagen6.jpg" alt="Imagen 6">
+                    <div class="overlay"></div>
+                </a>
+            </div>
         </div>
-        <div class="show__image2">
-            <a href="#" class="show__close">X</a>
+
+        <!-- CSS-Only Modals -->
+        <div id="img1" class="modal">
+            <a href="#" class="close">&times;</a>
+            <img class="modal-content" src="img/imagen1.jpg" alt="Imagen 1">
         </div>
-        <div class="show__image3">
-            <a href="#" class="show__close">X</a>
+        <div id="img2" class="modal">
+            <a href="#" class="close">&times;</a>
+            <img class="modal-content" src="img/imagen2.jpg" alt="Imagen 2">
         </div>
-        <div class="show__image4">
-            <a href="#" class="show__close">X</a>
+        <div id="img3" class="modal">
+            <a href="#" class="close">&times;</a>
+            <img class="modal-content" src="img/imagen3.jpg" alt="Imagen 3">
         </div>
-        <div class="show__image5">
-            <a href="#" class="show__close">X</a>
+        <div id="img4" class="modal">
+            <a href="#" class="close">&times;</a>
+            <img class="modal-content" src="img/imagen4.jpg" alt="Imagen 4">
         </div>
-        <div class="show__image6">
-            <a href="#" class="show__close">X</a>
+        <div id="img5" class="modal">
+            <a href="#" class="close">&times;</a>
+            <img class="modal-content" src="img/imagen5.jpg" alt="Imagen 5">
         </div>
-    </section>
-</body>
-</html>
+        <div id="img6" class="modal">
+            <a href="#" class="close">&times;</a>
+            <img class="modal-content" src="img/imagen6.jpg" alt="Imagen 6">
+        </div>
+    </body>
+
+    </html>
