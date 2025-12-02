@@ -22,28 +22,180 @@ body{
     margin-top: 6rem;
 }
 
-/* .slideshow {
+.slideshow {
     height: 100%;
     width: 100%;
     position: relative;
-} */
+    overflow: hidden;
+}
+
+.title{
+    position: absolute;
+    font-size: 4rem;
+    top: 25%;
+    left: 25%;
+    z-index: 1;
+    color: #0b2449;
+}
+
+.shop{
+    position: absolute;
+    display: block;
+    height: 40px;
+    width: 15%;
+    z-index: 2;
+    left: 42%;
+    top: 60%;
+    background-color: #0b2449;
+    border: 1px solid white;
+    color: white;
+    overflow: hidden;
+}
 
 
+
+
+/* 1. ESTILOS DEL CONTENEDOR PRINCIPAL (.shop) */
+.shop {
+    position: absolute;
+    display: flex; /* Para centrar los hijos (span y :after) */
+    align-items: center; 
+    justify-content: center;
+    height: 40px;
+    width: 15%;
+    left: 42%;
+    top: 60%;
+    background-color: #0b2449;
+    border: 1px solid white;
+    color: white;
+    /* ¡CLAVE! Oculta cualquier contenido que se deslice fuera del límite */
+    overflow: hidden; 
+}
+
+/* 2. ESTILOS DEL TEXTO INICIAL (.initial-text) */
+.shop .initial-text {
+    /* Posiciona el texto inicial exactamente en el centro */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* ¡CLAVE! Lo necesitamos en display flex para centrar su propio texto */
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    
+    /* Estado inicial: En su posición normal (0%) */
+    transform: translateY(0%);
+    transition: transform 0.5s; /* Agregamos la transición */
+}
+
+/* 3. ESTILOS DEL TEXTO DEL HOVER (:after) */
+.shop:after {
+    content: "You're interested";
+    
+    /* Posicionamiento para que cubra exactamente el área del .shop */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* Estilos de centrado para el texto del after */
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    
+    /* El after debe empezar justo debajo del botón */
+    transform: translateY(100%); 
+    transition: transform 0.5s;
+    
+    /* Aseguramos que el fondo no sea visible en el estado inicial */
+    background-color: #0b2449;
+}
+
+/* 4. EFECTO AL HACER HOVER */
+.shop:hover .initial-text {
+    /* ¡CLAVE! Mueve el texto inicial hacia arriba 100% de su altura */
+    transform: translateY(-100%); 
+}
+
+.shop:hover:after {
+    /* El texto del hover se desliza hacia arriba a su posición normal (0%) */
+    transform: translateY(0%);
+}
+
+.slide-btn{
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: #bbb;
+    border: 0.2rem solid #d38800;
+    border-radius: 50%;
+    position: absolute;
+    top: 95%;
+    z-index: 1;
+}
+
+
+.slide-btn-1 {
+    left: 44%;
+}
+
+.slide-btn-2{
+    left: 48%;
+}
+
+.slide-btn-3{
+    left: 52%;
+}
+
+.slide-btn-4{
+    left: 56%;
+}
+
+.slide-btn:focus{
+    background-color: #12376e;
+}
+
+
+.slide-btn-1:focus~.slideshow-wrapper{
+    animation: none;
+    left: 0%;
+}
+
+.slide-btn-2:focus~.slideshow-wrapper{
+    animation: none;
+    left: -100%;
+}
+
+
+.slide-btn-3:focus~.slideshow-wrapper{
+    animation: none;
+    left: -200%;
+}
+
+
+.slide-btn-4:focus~.slideshow-wrapper{
+    animation: none;
+    left: -300%;
+}
 
 .slideshow-wrapper {
     display: flex;
     width: 400%;
     height: 100%;
     position: relative;
+    overflow: hidden;
     animation: animacion 10s infinite;
 }
 
 .slide {
     width: 25%;
     height: 100%;
-    position: absolute;
+    /* position: absolute;
     left: 0;
-    top: 0;
+    top: 0; */
 }
 
 .slide img {
@@ -86,4 +238,6 @@ body{
         left: 0%;
     }
 }
+
+
 
