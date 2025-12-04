@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Página Inicio */
+
+.inicio{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-color {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: crimson;
+    clip-path: polygon(0 0, 28% 0, 28% 100%, 0% 100%);
+    z-index: -1;
+}
+
+
+.burger{
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    height: 50px;
+    width: 50px;
+    background-color: grey;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.burger span {
+    height: 20%;
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin: 3px auto;
+}
+
+.burger span:first-child{
+    margin-top: 15px;
+}
+
+.content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.content figure{
+    width: 45%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.content figure img{
+    width: 45%;
+    height: 400px;
+    margin: 0 auto;
+
+}
+
+.content .article {
+    width: 45%;
+    height: 400px;
+    font-size: 1.6rem;
+}
+
+h1{
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.content .article p {
+    width: 80%;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    margin-bottom: 5px;
+}
+
+
+.content .article button {
+    background-color: crimson;
+    color: white;
+    width: 20%;
+    height: 45px;
+    border: none;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
