@@ -28,6 +28,7 @@
     width: 50%;
     color: var(--color-primary);
     font-size: 2.2rem;
+    animation: animacion_inicio 0.8s ease 1;
 }
 
 .content h2{
@@ -42,12 +43,37 @@
 
 .cabecera figure {
     width: 40%;
+    animation: animacion_inicio2 0.8s ease 1;
 }
 
 .cabecera figure img{
     width: 70%;
 }
 
+
+@keyframes animacion_inicio {
+    0%{
+        transform: translateX(-100%);
+    }
+
+    
+
+    100%{
+        transform: translateX(-0%);
+    }
+}
+
+
+@keyframes animacion_inicio2 {
+    0%{
+        transform: translateX(100%);
+    }
+
+
+    100%{
+        transform: translateX(0%);
+    }
+}
 
 /* FIN CABECERA */
 
@@ -57,14 +83,16 @@
 
 .view_more{
     width: 100%;
-    height: 10vh;
+    height: 15vh;
+    margin-top: 30px;
 }
 
 
 .btn__view_more {
+    padding: 10px;
     margin-left: 140px;
     margin-top: 20px;
-    height: 27px;
+    height: 40px;
     width: 15%;
     background-color: white;
     border:1px solid var(--color-secondary);
@@ -72,12 +100,13 @@
     font-weight: bold;
     border-radius: 5%;
     position: relative;
+    text-decoration: none;
 }
 
 .btn__view_more::after{
     content: "Para Ver más Pulsa";
     text-align: center;
-    line-height: 27px;
+    line-height: 40px;
     position: absolute;
     top: 0;
     left: 0;
@@ -96,6 +125,44 @@
     transition: 0.5s;
 }
 
+
+#tienda {
+    background-color: rgb(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    transition: 1s;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#tienda img {
+    position: relative;
+    width: 60%;
+    height: 80vh;
+}
+
+#tienda a {
+    width: 40px;
+    color: white;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: red;
+    position: absolute;
+    top: 68px;
+    right: 300px;
+}
+
+#tienda:target {
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    transition: 1s;
+}
 /* FIN BOTÓN VER MAS */
 
 
