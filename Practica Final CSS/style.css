@@ -28,7 +28,7 @@
     width: 50%;
     color: var(--color-primary);
     font-size: 2.2rem;
-    animation: animacion_inicio 0.8s ease 1;
+    animation: animacion_inicio 1s ease 1;
 }
 
 .content h2{
@@ -53,7 +53,7 @@
 
 @keyframes animacion_inicio {
     0%{
-        transform: translateX(-100%);
+        transform: translateY(200%);
     }
 
     
@@ -155,8 +155,9 @@
     line-height: 40px;
     background-color: red;
     position: absolute;
-    top: 68px;
-    right: 300px;
+    top: 10%;
+    right: 20%;
+    text-decoration: none;
 }
 
 #tienda:target {
