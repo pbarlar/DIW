@@ -1,0 +1,12 @@
+.row{
+    background-color: #f2f2f2;
+    margin-top: 20px;
+    /* height: 300px; */
+}
+
+.columna {
+    background-color: aquamarine;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid;
+}
