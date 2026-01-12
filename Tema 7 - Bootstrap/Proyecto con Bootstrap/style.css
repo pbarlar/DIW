@@ -1,0 +1,107 @@
+/* Variables */
+:root {
+    --first-color: rgb(217,0,98);
+    --first-alpha-color: rgba(217,0,98,0.75);
+    --second-color: rgb(20,25,45);
+    --second-aplha-color: rgba(20,25,45,0.75);
+    --third-color: rgb(80,20,100);
+    --third-aplha-color: rgba(80,20,100,0.75);
+
+    --link-color: rgb(80,158,227);
+    --link-alpha-color: rgb(80,158,227,0.75);
+
+
+    --bg-color: rgb(245,245,245);
+    --bg-aplha-color: rgba(245,245,245,0.75);
+}
+
+
+
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+
+.navbar-brand img{
+    height: 3rem;
+    width: auto;
+}
+
+.bg-dark{
+    background-color: var(--second-color) !important;
+}
+
+.nav-item{
+    transition: 0.3s all ease-out;
+}
+
+.nav-item:hover {
+    background-color: var(--first-alpha-color);
+}
+
+.nav-link {
+    color: var(--first-color);
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+
+.navbar-dark .navbar-toggler {
+    --bs-navbar-toggler-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(255,255,255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-dark .navbar-toggler:hover {
+    --bs-navbar-toggler-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(217,0,98,0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    transition: all 0.3s;
+}
+
+
+.dropdown-item {
+    color: var(--first-alpha-color);
+    font-weight: bold;
+}
+
+.dropdown-item {
+    color: var(--third-alpha-color);
+}
+
+a{
+    color: var(--link-color);
+    transition: all 0.3s;
+}
+
+a:hover{
+    color: var(--first-color);
+}
+
+
+
+
+/* Estilos al index */
+.bg-gradient-blue-green{
+    background-image: linear-gradient(131deg, rgba(28,118,173,0.92), rgba(83, 184, 152,1));
+}
+
+.bg-third-color {
+    background-color: var(--third-color);
+}
+
+.text-third-color {
+    color: var(--third-color);
+}
+
+
+
+/* Media query */
+
+@media screen and (min-width:992px) {
+    .nav-item:hover {
+        background-color: transparent;
+        transition: 0.3s all;
+    }
+}
