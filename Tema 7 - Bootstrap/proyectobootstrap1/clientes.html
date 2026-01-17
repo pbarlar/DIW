@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Proyecto Boostrap</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="img/bad-dog-studio-logo.png" alt="Logo"
+        /></a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-lg-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="sitios.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Sitios
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="sitios.html#ultimos-proyectos"
+                    >Ultimos Proyectos</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="sitios.html#single-page"
+                    >Sitio <i>Single Page</i></a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="sitios.html#multi-page"
+                    >Sitios <i>Multi Page</i></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="clientes.html"
+                >Clientes</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comencemos.html">Comencemos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="interesado.html">¿Interesados?</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="pt-5 bg-color">
+      <div class="container">
+        <section class="row">
+          
+          <article class="col-12 text-center">
+            <div class="card text-bg-dark text-start border-0 rounded-0">
+              <img src="img/clients-1.jpg" class="card-img" alt="Cliente 1" />
+              <div
+                class="card-img-overlay bg-second-aplha-color d-flex flex-column justify-content-md-center"
+              >
+                <h5 class="card-title">Andy Panharikar</h5>
+                <p class="card-text">
+                  CEO/Co-fundados, Commerce AI <br />
+                  <a
+                    href="#"
+                    class="text-success"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Cliente1"
+                    >Ver Proyectos</a
+                  >
+                </p>
+
+                <p class="card-text d-none d-md-block">
+                  <small
+                    >No estabamos satisfechos con ninguna de nuestras opciones
+                    anteriores. Pero Bad Dog tuvo todo lo que teníamos en mente.
+                  </small>
+                </p>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="Cliente1"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      <a href="https://www.commerce.ai" target="_blank">Commerce AI</a>
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Posicioné una nueva marca comercial (en linea) y diseñé un sitio web adaptado y hecho a medida.</p>
+                    <img src="img/work-layout-1.jpg" alt="work-layout-1" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-12 col-sm-6 col-lg-4">
+            <div class="card text-bg-dark text-start border-0 rounded-0">
+              <img src="img/clients-2.jpg" class="card-img" alt="Cliente 1" />
+              <div
+                class="card-img-overlay bg-second-aplha-color d-flex flex-column justify-content-md-center"
+              >
+                <h5 class="card-title">Zeb Couch</h5>
+                <p class="card-text">
+                  Dueño de zeb couch <br />
+                  <a
+                    href="#"
+                    class="text-success"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Cliente2"
+                    >Ver Proyectos</a
+                  >
+                </p>
+
+                <p class="card-text d-none d-md-block">
+                  <small
+                    >He trabajado con BAd Dog en varios Proyectos ahora y seguire trabajando siempre que pueda
+                  </small>
+                </p>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="Cliente2"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      <a href="https://www.commerce.ai" target="_blank">Walkers</a>
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, molestias quae nihil optio dolore ea, accusamus perferendis facere suscipit saepe cupiditate esse, voluptate labore dolor porro perspiciatis totam aperiam exercitationem.</p>
+                    <img src="img/work-layout-2.jpg" alt="work-layout-1" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-12 col-sm-6 col-lg-4">
+            <div class="card text-bg-dark text-start border-0 rounded-0">
+              <img src="img/clients-3.jpg" class="card-img" alt="Cliente 1" />
+              <div
+                class="card-img-overlay bg-second-aplha-color d-flex flex-column justify-content-md-center"
+              >
+                <h5 class="card-title">Lory Knisely</h5>
+                <p class="card-text">
+                  Co-dueña y diseñadora de Hey Textile <br />
+                  <a
+                    href="#"
+                    class="text-success"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Cliente3"
+                    >Ver Proyectos</a
+                  >
+                </p>
+
+                <p class="card-text d-none d-md-block">
+                  <small
+                    >¡Bad Dog, siempre lo consigue!
+                  </small>
+                </p>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="Cliente3"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      <a href="https://www.commerce.ai" target="_blank">Hey Textile</a>
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis accusantium exercitationem recusandae, corporis saepe explicabo incidunt maiores doloribus. Nesciunt repellendus sint natus aspernatur veniam obcaecati reiciendis eos, tenetur laudantium ab!</p>
+                    <img src="img/work-layout-3.jpg" alt="work-layout-1" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-12 col-sm-6 col-lg-4">
+            <div class="card text-bg-dark text-start border-0 rounded-0">
+              <img src="img/clients-4.jpg" class="card-img" alt="Cliente 1" />
+              <div
+                class="card-img-overlay bg-second-aplha-color d-flex flex-column justify-content-md-center"
+              >
+                <h5 class="card-title">Tom Allan</h5>
+                <p class="card-text">
+                  Co-fundador & Director, Basis Network <br />
+                  <a
+                    href="#"
+                    class="text-success"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Cliente4"
+                    >Ver Proyectos</a
+                  >
+                </p>
+
+                <p class="card-text d-none d-md-block">
+                  <small
+                    >Definitavemente continuaremos usando los servicios de Bad Dog para nuestros proyectos futuros.
+                  </small>
+                </p>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="Cliente4"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      <a href="https://www.commerce.ai" target="_blank">Basis Network</a>
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, molestias quae nihil optio dolore ea, accusamus perferendis facere suscipit saepe cupiditate esse, voluptate labore dolor porro perspiciatis totam aperiam exercitationem.</p>
+                    <img src="img/work-layout-4.jpg" alt="work-layout-1" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+          </article>
+          <article class="col-12 col-sm-6 col-lg-4">
+            <div class="card text-bg-dark text-start border-0 rounded-0">
+              <img src="img/clients-5.jpg" class="card-img" alt="Cliente 1" />
+              <div
+                class="card-img-overlay bg-second-aplha-color d-flex flex-column justify-content-md-center"
+              >
+                <h5 class="card-title">Jin Choeh</h5>
+                <p class="card-text">
+                  Co-founder & CEO Swingvy <br />
+                  <a
+                    href="#"
+                    class="text-success"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Cliente5"
+                    >Ver Proyectos</a
+                  >
+                </p>
+
+                <p class="card-text d-none d-md-block">
+                  <small
+                    >Bad Dog estaba mas alla de nuestras expectativas
+                  </small>
+                </p>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="Cliente5"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      <a href="https://www.commerce.ai" target="_blank">Swingvy</a>
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Posicioné una nueva marca comercial (en linea) y diseñé un sitio web adaptado y hecho a medida.</p>
+                    <img src="img/work-layout-5.jpg" alt="work-layout-1" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-12 col-sm-6 col-lg-4">
+            <div class="card text-bg-dark text-start border-0 rounded-0">
+              <img src="img/clients-6.jpg" class="card-img" alt="Cliente 1" />
+              <div
+                class="card-img-overlay bg-second-aplha-color d-flex flex-column justify-content-md-center"
+              >
+                <h5 class="card-title">Jennifer Blair</h5>
+                <p class="card-text">
+                  CEO Lash Spa Studio <br />
+                  <a
+                    href="#"
+                    class="text-success"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Cliente6"
+                    >Ver Proyectos</a
+                  >
+                </p>
+
+                <p class="card-text d-none d-md-block">
+                  <small
+                    >Hemos encontrado un socio perfecto para nuestras necesidades de diseño y marca
+                  </small>
+                </p>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="Cliente6"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      <a href="https://www.commerce.ai" target="_blank">Lash Spa Studio</a>
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Posicioné una nueva marca comercial (en linea) y diseñé un sitio web adaptado y hecho a medida.</p>
+                    <img src="img/work-layout-6.jpg" alt="work-layout-1" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-12 col-sm-6 col-lg-4">
+            <div class="card text-bg-dark text-start border-0 rounded-0">
+              <img src="img/clients-7.jpg" class="card-img" alt="Cliente 1" />
+              <div
+                class="card-img-overlay bg-second-aplha-color d-flex flex-column justify-content-md-center"
+              >
+                <h5 class="card-title">Sietse Kingma</h5>
+                <p class="card-text">
+                  Co-fundador de Bambuu BV <br />
+                  <a
+                    href="#"
+                    class="text-success"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Cliente7"
+                    >Ver Proyectos</a
+                  >
+                </p>
+
+                <p class="card-text d-none d-md-block">
+                  <small
+                    >Bad Dog crea sitios impresionantes, estrategias increibles y mucho más.
+                  </small>
+                </p>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="Cliente7"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      <a href="https://www.commerce.ai" target="_blank">Bambuu</a>
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, molestias quae nihil optio dolore ea, accusamus perferendis facere suscipit saepe cupiditate esse, voluptate labore dolor porro perspiciatis totam aperiam exercitationem.</p>
+                    <img src="img/work-layout-7.jpg" alt="work-layout-1" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+          </article>
+          <article class="col-12">
+            <div class="card text-bg-dark text-start border-0 rounded-0">
+              <img src="img/clients-8.jpg" class="card-img" alt="Cliente 1" />
+              <div
+                class="card-img-overlay bg-second-aplha-color d-flex flex-column justify-content-md-center"
+              >
+                <h5 class="card-title">Sergie Magdalin</h5>
+                <p class="card-text">
+                  Co-fundador de Web Flow <br />
+                  <a
+                    href="#"
+                    class="text-success"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Cliente8"
+                    >Ver Proyectos</a
+                  >
+                </p>
+
+                <p class="card-text d-none d-md-block">
+                  <small
+                    >Bad Dog es una de las mejores empresas con las que he trabajado
+                  </small>
+                </p>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="Cliente8"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      <a href="https://www.commerce.ai" target="_blank">WebFlow</a>
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, molestias quae nihil optio dolore ea, accusamus perferendis facere suscipit saepe cupiditate esse, voluptate labore dolor porro perspiciatis totam aperiam exercitationem.</p>
+                    <img src="img/work-layout-8.jpg" alt="work-layout-1" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark">
+      <div class="container">
+        <nav class="d-flex justify-content-evenly">
+          <a href="https://facebook.com" target="_black"
+            ><i class="bi bi-facebook fs-3"></i
+          ></a>
+          <a href="https://twitter.com" target="_black"
+            ><i class="bi bi-twitter fs-3"></i
+          ></a>
+          <a href="https://github.com" target="_black"
+            ><i class="bi bi-github fs-3"></i
+          ></a>
+          <a href="https://youtube.com" target="_black"
+            ><i class="bi bi-youtube fs-3"></i
+          ></a>
+          <a href="https://instagram.com" target="_black"
+            ><i class="bi bi-instagram fs-3"></i
+          ></a>
+          <a href="https://m.me/usercom" target="_black"
+            ><i class="bi bi-messenger fs-3"></i
+          ></a>
+          <a href="https://whatsapp.com/send?phone=numero" target="_black"
+            ><i class="bi bi-whatsapp fs-3"></i
+          ></a>
+        </nav>
+
+        <small class="text-white">
+          &copy; 2026 @Pablo Barranco. Hecho con fines Educativos
+        </small>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
