@@ -130,8 +130,13 @@ background-size: cover;
 
 
 /* Estilos página clientes */
-.bg-second-aplha-color {
+.bg-second-alpha-color {
     background-color: var(--second-aplha-color);
+}
+
+/* Estilos pagina interesado.html */
+.carousel-caption {
+    z-index: 1;
 }
 
 
