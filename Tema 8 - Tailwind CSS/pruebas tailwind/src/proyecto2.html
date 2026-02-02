@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Tailwind CSS Proyecto 2</title>
+</head>
+<body>
+    <div class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% w-screen h-100">
+        <h1 class="text-4xl text-center text-white p-4">Formulario en TailwindCSS</h1>
+
+        <!-- Formulario -->
+        <form class="bg-white mx-auto w-100 rounded-lg p-6">
+            <input type="text" class="border border-gray-300 w-full py-2 px-3 mb-4 rounded-md disabled:bg-red-200" placeholder="Nombre">
+
+            <input type="email" class="border border-gray-300 w-full py-2 px-3 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-600 invalid:focus:ring-red-400 peer" placeholder="Email">
+            <p class="text-red-400 hidden peer-invalid:block">El correo es incorrecto</p>
+        </form>
+    </div>
+</body>
+</html>
