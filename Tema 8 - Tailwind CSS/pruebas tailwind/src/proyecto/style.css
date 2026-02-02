@@ -1,13 +1,34 @@
-@import "taiwindcss";
+@import "tailwindcss";
 
+
+
+
+@theme {
+    --color-cyan: hsl(176,68%,64%);
+    --bg-dark-blue: hsl(217,20%,15%);
+    --bg-dark-blue-1: hsl(216,53%,9%);
+    --bg-dark-blue-2: hsl(218,28%,13%);
+    --bg-dark-blue-3: hsl(219,30%,18%);
+
+    --color-accent-blue: hsl(198,60%,50%);
+    --color-light-red: hsl(0,100%, 63%)
+}
 
 @layer utilities {
     .bg-logo-light-mode {
         background-image: url("assets/logo-light-mode.svg");
     }
 
+    .bg-logo-negro-mode {
+        background-image: url("assets/logo-dark-mode.svg");
+    }
+
     .bg-curvy-light-mode{
         background-image: url("assets/bg-curvy-light-mode.svg");
+    }
+
+    .bg-curvy-negro-mode{
+        background-image: url("assets/bg-curvy-dark-mode.svg");
     }
 
     .ficon:hover {
@@ -15,6 +36,3 @@
     }
 }
 
-@theme {
-    --text-cyan: hsl(176,68%,64%);
-}

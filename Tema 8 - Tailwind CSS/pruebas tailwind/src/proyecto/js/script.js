@@ -64,6 +64,8 @@ function test() {
   }
 }
 
+
+
 // 5.- llamar a la función toggleMode cuando se haga click en el botón de cambio de tema
 themeToggleBtn.addEventListener("click", toggleMode);
 
